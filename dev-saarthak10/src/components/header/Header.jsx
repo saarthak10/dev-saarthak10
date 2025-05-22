@@ -15,10 +15,10 @@ const Header = ({ pages }) => {
   };
 
   return (
-    <div class="flex justify-between items-center pt-1.5 px-8">
+    <div class="flex mx-auto max-w-7xl justify-between items-center  py-4 px-8">
       <h1 class="text-2xl">{head}</h1>
 
-      <div class="flex">
+      <div class="flex ">
         {pages.map((page) => (
           <button key={page.id} class="mr-2.5">
             {page.title}

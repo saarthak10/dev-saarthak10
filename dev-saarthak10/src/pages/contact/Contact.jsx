@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Projects = () => {
+const Contact = () => {
   return (
     <div class="mx-auto max-w-7xl py-24 ">
           <div class="flex flex-col justify-center items-center">
             <div class=" bg-gray-200 rounded-lg">
-              <p class="px-5 py-1">Work</p>
+              <p class="px-5 py-1">Get in touch</p>
             </div>
             <p class="pt-4">
-              Some of the noteworthy projects I have built:
+              What’s next? Feel free to reach out to me 
             </p>
           </div>
          
@@ -16,4 +16,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Contact
