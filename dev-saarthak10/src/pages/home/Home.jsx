@@ -6,6 +6,7 @@ import Skills from "../skills/Skills";
 import Experience from "../experience/Experience";
 import Projects from "../projects/Projects";
 import Contact from "../contact/Contact";
+import Footer from "../footer/Footer";
 
 const Home = () => {
   const pages = [
@@ -35,6 +36,9 @@ const Home = () => {
       </div>
       <div class="bg-gray-50">
         <Contact />
+      </div>
+      <div >
+        <Footer />
       </div>
     </div>
   );

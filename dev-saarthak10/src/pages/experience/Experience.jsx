@@ -13,18 +13,18 @@ const Experience = () => {
         </p>
       </div>
       <div class='pt-12'>
-          <div class='bg-white rounded-xl flex justify-between px-8 py-8'>
+          <div class='bg-white rounded-xl flex justify-between px-8 py-8 shadow-2xl'>
             <img src={organisationLogo} />
             <div class='flex flex-col'>
               <p class="text-xl">Software Development Engineer</p>
-              <ul class='list-disc pt-4'>
+              <ul class='list-disc pt-4 ml-4'>
                 <li class="text-base text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="text-base text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="text-base text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                 <li class="text-base text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
               </ul>
             </div>
-            <p class="text-base text-gray-700"> March 2021 - Present</p>
+            <p class="text-sm text-gray-700"> March 2021 - Present</p>
           </div>
 
 

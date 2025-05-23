@@ -9,8 +9,8 @@ import gitIcon from '../../assets/git_skill_icon.svg'
 import tailwindIcon from '../../assets/tailwindcss_icon.svg'
 import firebaseIcon from '../../assets/firebase_icon.svg'
 import socketIcon from '../../assets/socket_icon.svg'
-import postgresIcon from '../../assets/postgres_icon.svg'
-import mongodb_icon from '../../assets/mongodb_icon.svg'
+import mysqlIcon from '../../assets/mysql_icon.svg'
+import mongodbIcon from '../../assets/mongodb_icon.svg'
 
 
 
@@ -26,8 +26,8 @@ const Skills = () => {
     {id:9, skill:'Tailwindcss', logo:`${tailwindIcon}`},
     {id:10, skill:'Firebase', logo:`${firebaseIcon}`},
     {id:11, skill:'Socket.io', logo:`${socketIcon}`},
-    {id:12, skill:'PostgreSQL', logo:`${postgresIcon}`},
-    {id:13, skill:'MongoDB', logo:`${mongodb_icon}`},
+    {id:12, skill:'MySQL', logo:`${mysqlIcon}`},
+    {id:13, skill:'MongoDB', logo:`${mongodbIcon}`},
     {id:8, skill:'Git', logo:`${gitIcon}`},
   ]
   return (
