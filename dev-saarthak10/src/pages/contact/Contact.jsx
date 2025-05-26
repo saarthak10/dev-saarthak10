@@ -6,7 +6,7 @@ import phoneIcon from '../../assets/call_icon.svg'
 
 const Contact = () => {
   return (
-    <div class="mx-auto max-w-7xl py-24 ">
+    <div class="mx-auto max-w-7xl py-16 md:py-24">
           <div class="flex flex-col justify-center items-center">
             <div class=" bg-gray-200 rounded-lg">
               <p class="px-5 py-1">Get in touch</p>
@@ -18,14 +18,17 @@ const Contact = () => {
 
           <div class="pt-12 flex justify-center items-end">
             <img src={mailIcon} />
-            <p class="px-5 text-4xl "> saarthaksharma87@gmail.com</p>
-            <img src={copyIcon} />
+            <p class="px-5 text-[18px] md:text-4xl "> saarthaksharma87@gmail.com</p>
+            <img src={copyIcon} class="cursor-pointer"  onClick={() => {
+              navigator.clipboard.writeText('saarthaksharma87@gmail.com')}} />
           </div>
 
           <div class="pt-4 flex justify-center items-end">
             <img src={phoneIcon} />
-            <p class="px-5 text-4xl "> +91 8219278097</p>
-            <img src={copyIcon} />
+            <p class="px-5 text-[18px] md:text-4xl "> +91 8219278097</p>
+            <img src={copyIcon} class="cursor-pointer" onClick={() => {
+              navigator.clipboard.writeText(' +91 8219278097')}}
+ />
           </div>
          
         </div>

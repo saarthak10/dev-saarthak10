@@ -9,7 +9,7 @@ const Header = ({ pages }) => {
 
   return (
     <div class="flex mx-auto max-w-7xl justify-between items-center  py-4 px-8">
-      <h1 class="text-2xl">{head}</h1>
+      <h1 class={`text-2xl ${isOpen? 'hidden' : 'block'}`}>{head}</h1>
 
       <div class=" hidden md:flex flex-row   ">
         {pages.map((page) => (
@@ -24,14 +24,14 @@ const Header = ({ pages }) => {
           Download CV
         </button>
       </div>
-      <div class="md:hidden">
+      <div class={`md:hidden ${isOpen? 'hidden' : 'block'}`}>
         <img src={menuIcon} onClick={() => setIsOpen(!isOpen)} />
       </div>
 
       {isOpen ? (
-        <div class=" w-5/6 h-full bg-red-50 ">
+        <div class=" w-full h-full bg-red-200 ">
           <div class="flex justify-between p-4">
-            <h1 class="text-2xl">{head}</h1>
+            <h1 class={`text-2xl `}>{head}</h1>
             <img src={closeIcon} onClick={() => setIsOpen(!isOpen)} />
           </div>
           <div class="bg-gray-100 w-full h-0.5"></div>

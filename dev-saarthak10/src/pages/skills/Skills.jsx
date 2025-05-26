@@ -23,15 +23,15 @@ const Skills = () => {
     {id:5, skill:'Android', logo:`${androidIcon}`},
     {id:6, skill:'React Native', logo:`${reactIcon}`},
     {id:7, skill:'Material UI', logo:`${materialIcon}`},
+    {id:8, skill:'Git', logo:`${gitIcon}`},
     {id:9, skill:'Tailwindcss', logo:`${tailwindIcon}`},
     {id:10, skill:'Firebase', logo:`${firebaseIcon}`},
     {id:11, skill:'Socket.io', logo:`${socketIcon}`},
     {id:12, skill:'MySQL', logo:`${mysqlIcon}`},
     {id:13, skill:'MongoDB', logo:`${mongodbIcon}`},
-    {id:8, skill:'Git', logo:`${gitIcon}`},
   ]
   return (
-    <div class="mx-auto max-w-7xl py-24 ">
+    <div class="mx-auto max-w-7xl py-16 md:py-24 ">
       <div class="flex flex-col justify-center items-center">
         <div class=" bg-gray-200 rounded-lg">
         <p class="px-5 py-1">Skills</p>
@@ -39,7 +39,7 @@ const Skills = () => {
         <p class="pt-4" >The skills, tools and technologies I am really good at:</p>
       </div>
 
-      <div class="grid grid-flow-col grid-rows-2 gap-4 items-center pt-12 ">
+      <div class="grid  grid-cols-3 grid-rows-3 md:grid-cols-5  md:grid-rows-2  gap-4 items-center pt-12 ">
         {skills.map((skill)=>(
           <div key={skill.id} class="flex flex-col items-center ">
             <img src={skill.logo} class="px-3 py-2" />
