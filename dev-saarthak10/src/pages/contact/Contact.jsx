@@ -27,7 +27,9 @@ const Contact = () => {
             <img src={phoneIcon} />
             <p class="px-5 text-[18px] md:text-4xl "> +91 8219278097</p>
             <img src={copyIcon} class="cursor-pointer" onClick={() => {
-              navigator.clipboard.writeText(' +91 8219278097')}}
+              navigator.clipboard.writeText(' +91 8219278097')
+              
+            }}
  />
           </div>
          
