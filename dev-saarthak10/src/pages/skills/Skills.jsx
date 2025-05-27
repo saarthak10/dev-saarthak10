@@ -14,7 +14,7 @@ import mongodbIcon from '../../assets/mongodb_icon.svg'
 
 
 
-const Skills = () => {
+const Skills = ({ref}) => {
   const skills = [
     {id:1, skill:'Javascript', logo:`${javascriptIcon}`},
     {id:2, skill:'React', logo:`${reactIcon}`},
@@ -31,19 +31,19 @@ const Skills = () => {
     {id:13, skill:'MongoDB', logo:`${mongodbIcon}`},
   ]
   return (
-    <div class="mx-auto max-w-7xl py-16 md:py-24 ">
+    <div class="mx-auto max-w-7xl py-16 md:py-24 " ref={ref}>
       <div class="flex flex-col justify-center items-center">
         <div class=" bg-gray-200 rounded-lg">
         <p class="px-5 py-1">Skills</p>
         </div>
-        <p class="pt-4" >The skills, tools and technologies I am really good at:</p>
+        <p class="pt-4 dark:text-white" >The skills, tools and technologies I am really good at:</p>
       </div>
 
       <div class="grid  grid-cols-3 grid-rows-3 md:grid-cols-5  md:grid-rows-2  gap-4 items-center pt-12 ">
         {skills.map((skill)=>(
           <div key={skill.id} class="flex flex-col items-center ">
             <img src={skill.logo} class="px-3 py-2" />
-            <p class='text-4.5'>{skill.skill}</p>
+            <p class='text-4.5 dark:text-white'>{skill.skill}</p>
           </div>
         ))}
       </div>

@@ -5,7 +5,7 @@ const Footer = () => {
     <div class="mx-auto max-w-7xl">
         <div class="flex flex-row justify-center items-center py-6">
             <img src={footerIcon}/>
-            <p class="pl-2 text-sm"> 2025 Saarthak Sharma | Crafted with purpose</p>
+            <p class="pl-2 text-sm dark:text-white"> 2025 Saarthak Sharma | Crafted with purpose</p>
 
         </div>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import digidocImage from "../../assets/digidoc_project.svg";
 
-const Projects = () => {
+const Projects = ({ref}) => {
   const projects = [
     {
       id: 1,
@@ -39,27 +39,27 @@ const Projects = () => {
     },
   ];
   return (
-    <div class="mx-auto max-w-7xl py-16 md:py-24 ">
+    <div class="mx-auto max-w-7xl py-16 md:py-24 " ref={ref}>
       <div class="flex flex-col justify-center items-center">
         <div class=" bg-gray-200 rounded-lg">
           <p class="px-5 py-1">Work</p>
         </div>
-        <p class="pt-4">Some of the noteworthy projects I have built:</p>
+        <p class="pt-4 dark:text-gray-dark-600">Some of the noteworthy projects I have built:</p>
       </div>
 
       <div class="pt-12 px-4 lg:px-0  flex flex-col gap-6">
         {projects.map((project) => (
-          <div class="bg-white rounded-xl flex flex-col md:flex-row  justify-evenly px-12 py-12 shadow ">
-            <div class="order-first px-12 py-12 flex-1/2 justify-items-stretch items-center">
+          <div key={project.id} class="bg-white dark:bg-gray-dark-100 rounded-xl flex flex-col md:flex-row  justify-evenly px-12 py-12 shadow ">
+            <div class="order-first px-12 py-12 flex-1 justify-items-stretch items-center">
               <img src={project.image} />
             </div>
-            <div class="flex-1/2 flex-col order-last md:order-2  ">
-              <p class="text-xl pt-12 font-bold">{project.title}</p>
-              <p class="text-base pt-6 text-justify">{project.description}</p>
+            <div class="flex-1 flex-col order-last md:order-2  ">
+              <p class="text-xl pt-12 font-bold dark:text-white">{project.title}</p>
+              <p class="text-base pt-6 text-justify dark:text-gray-dark-600">{project.description}</p>
               <div class="grid  grid-cols-3 grid-rows-2  rounded-xl mt-6">
 
               {project.skills.map((skill)=>(
-                <div class="text-center bg-gray-200 rounded-xl mr-1 mt-2 ">
+                <div class="text-center bg-gray-200 dark:bg-gray-dark-200 dark:text-gray-dark-600 rounded-xl mr-1 mt-2 ">
                   <p class="px-5 py-1 text-[14px]">{skill}</p>
                 </div>
               ))}

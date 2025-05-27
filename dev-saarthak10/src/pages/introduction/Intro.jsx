@@ -2,42 +2,81 @@ import React from "react";
 import passportPhoto from "../../assets/passportSize.jpg";
 import locationIcon from "../../assets/location_icon.svg";
 import githubIcon from "../../assets/github_icon.svg";
+import githubDarkIcon from "../../assets/github_dark_icon.svg";
 import hackerrankIcon from "../../assets/hackerrank_icon.svg";
 import linkdinIcon from "../../assets/linkdin_icon.svg";
 
-
-const Intro = () => {
+const Intro = ({ theme }) => {
+  const handleOpenGithub = () => {
+    window.location.href = "https://github.com/saarthak10";
+  };
+  const handleOpenHackerRank = () => {
+    window.location.href =
+      "https://www.hackerrank.com/profile/saarthaksharma87";
+  };
+  const handleOpenlinkdIn = () => {
+    window.location.href =
+      "https://www.linkedin.com/in/saarthak-sharma-1210con";
+  };
   return (
     <div class="py-12 px-8 mx-auto max-w-7xl  flex flex-col  md:flex-row gap-12 justify-between items-center">
       <div class="flex-col order-last md:order-first ">
-        <h1 class=" text-4xl  md:text-6xl">Hi, I’m Sagar 👋</h1>
-        <p class="text-justify text-base pt-2">
-          I'm a full stack developer (React.js & Node.js) with a focus on
-          creating (and occasionally designing) exceptional digital experiences
-          that are fast, accessible, visually appealing, and responsive. Even
-          though I have been creating web applications for over 7 years, I still
-          love it as if it was something new.
+        <h1 class=" text-4xl  md:text-6xl dark:text-white">Hi, I’m Saarthak 👋</h1>
+        <p class="text-justify text-base pt-2 dark:text-white">
+          I'm a passionate software developer with 4.3 years of professional
+          experience in building robust and user-centric applications across
+          mobile and web platforms. I’ve developed and maintained
+          high-performance mobile applications using Android (Kotlin) and React
+          Native, blending native capabilities with clean, intuitive user
+          experiences. On the web, I specialize in React and JavaScript,
+          crafting responsive, scalable, and modern interfaces. Whether it's
+          developing cross-platform mobile apps or creating interactive web
+          experiences, I thrive on solving problems and building meaningful
+          digital solutions.
         </p>
         <div class="pt-12">
           <div class="flex">
             <img src={locationIcon} />
-            <p class="pl-2 text-4">Himachal Pradesh, India</p>
+            <p class="pl-2 text-4 dark:text-white">Himachal Pradesh, India</p>
           </div>
         </div>
         <div class="pt-12">
           <div class="flex">
-            <img class="px-1" src={githubIcon}  height={'30px'} width={'30px'}/>
-            <img class="px-1" src={hackerrankIcon} height={'30px'} width={'30px'} />
-            <img class="px-1" src={linkdinIcon} height={'30px'} width={'30px'}/>
+            <img
+              class="px-1  cursor-pointer"
+              src={theme === "dark" ? githubDarkIcon : githubIcon}
+              onClick={() => handleOpenGithub()}
+              height={"30px"}
+              width={"30px"}
+            />
+            <img
+              class="px-1  cursor-pointer"
+              src={hackerrankIcon}
+              height={"30px"}
+              width={"30px"}
+              onClick={() => handleOpenHackerRank()}
+            />
+            <img
+              class="px-1  cursor-pointer"
+              src={linkdinIcon}
+              height={"30px"}
+              width={"30px"}
+              onClick={() => handleOpenlinkdIn()}
+            />
           </div>
         </div>
       </div>
       <div class="order-first md:order-last">
-        <img  src={passportPhoto} 
-        // width={'280px'} 
-        // height={'320px'} 
-        // class="shadow-[20px_20px_0] shadow-gray-200"
-        class={ 'shadow-[-10px_10px_0]  md:shadow-[20px_20px_0] shadow-gray-200 '}
+        <img
+          src={passportPhoto}
+          // width={'280px'}
+          // height={'320px'}
+          // class="shadow-[20px_20px_0] shadow-gray-200"
+          class={`shadow-[-10px_10px_0_#e5e7eb] ${
+            theme === "dark"
+              ? "md:shadow-[20px_20px_0_#374151] "
+              : "md:shadow-[20px_20px_0_#e5e7eb]"
+          } dark:shadow-[-10px_10px_0_#374151 `}
         />
       </div>
     </div>
