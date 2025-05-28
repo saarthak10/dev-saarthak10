@@ -16,7 +16,7 @@ const Experience = ({ref, theme}) => {
       </div>
       <div class='pt-12 px-4 lg:px-0'>
           <div class='bg-white dark:bg-gray-dark-100 rounded-xl flex flex-col md:flex-row justify-between px-8 py-8 shadow-2xl'>
-            <div class='order-1 '>
+            <div class='order-1 flex items-center justify-center'>
             <img class="w-1/2" src={theme === 'dark'?organisationDarkLogo :organisationLogo} />
             </div>
             <div class='flex flex-col order-3 md:order-2 pt-4 md:pt-0'>

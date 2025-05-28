@@ -55,13 +55,13 @@ const Home = () => {
         <About theme={theme} ref={aboutRef}/>
       </div>
       <div>
-        <Skills ref={skillsRef}/>
+        <Skills ref={skillsRef} theme={theme}/>
       </div>
       <div class="bg-gray-50 dark:bg-gray-dark-50">
         <Experience ref={experienceRef} theme={theme}/>
       </div>
       <div>
-        <Projects ref={projectsRef}/>
+        <Projects ref={projectsRef} theme={theme}/>
       </div>
       <div class="bg-gray-50 dark:bg-gray-dark-50">
         <Contact ref={contactsRef} />

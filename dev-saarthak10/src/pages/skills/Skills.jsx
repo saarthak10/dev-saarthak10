@@ -9,12 +9,13 @@ import gitIcon from '../../assets/git_skill_icon.svg'
 import tailwindIcon from '../../assets/tailwindcss_icon.svg'
 import firebaseIcon from '../../assets/firebase_icon.svg'
 import socketIcon from '../../assets/socket_icon.svg'
+import socketDarkIcon from '../../assets/socket_dark_icon.svg'
 import mysqlIcon from '../../assets/mysql_icon.svg'
 import mongodbIcon from '../../assets/mongodb_icon.svg'
 
 
 
-const Skills = ({ref}) => {
+const Skills = ({ref, theme}) => {
   const skills = [
     {id:1, skill:'Javascript', logo:`${javascriptIcon}`},
     {id:2, skill:'React', logo:`${reactIcon}`},
@@ -26,7 +27,7 @@ const Skills = ({ref}) => {
     {id:8, skill:'Git', logo:`${gitIcon}`},
     {id:9, skill:'Tailwindcss', logo:`${tailwindIcon}`},
     {id:10, skill:'Firebase', logo:`${firebaseIcon}`},
-    {id:11, skill:'Socket.io', logo:`${socketIcon}`},
+    {id:11, skill:'Socket.io', logo:`${theme === 'dark'?socketDarkIcon :socketIcon}`},
     {id:12, skill:'MySQL', logo:`${mysqlIcon}`},
     {id:13, skill:'MongoDB', logo:`${mongodbIcon}`},
   ]

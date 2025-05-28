@@ -19,8 +19,8 @@ const Intro = ({ theme }) => {
       "https://www.linkedin.com/in/saarthak-sharma-1210con";
   };
   return (
-    <div class="py-12 px-8 mx-auto max-w-7xl  flex flex-col  md:flex-row gap-12 justify-between items-center">
-      <div class="flex-col order-last md:order-first ">
+    <div class="py-24 px-20 mx-auto max-w-7xl  flex flex-col  md:flex-row gap-12 justify-between">
+      <div class="max-w-2xl flex-col order-last md:order-first ">
         <h1 class=" text-4xl  md:text-6xl dark:text-white">Hi, I’m Saarthak 👋</h1>
         <p class="text-justify text-base pt-2 dark:text-white">
           I'm a passionate software developer with 4.3 years of professional
@@ -42,42 +42,56 @@ const Intro = ({ theme }) => {
         </div>
         <div class="pt-12">
           <div class="flex">
-            <img
+            <a>
+              <img
               class="px-1  cursor-pointer"
               src={theme === "dark" ? githubDarkIcon : githubIcon}
               onClick={() => handleOpenGithub()}
-              height={"30px"}
-              width={"30px"}
+              height={"60px"}
+              width={"60px"}
             />
+              </a>
+
+            <a>
+              
             <img
               class="px-1  cursor-pointer"
               src={hackerrankIcon}
-              height={"30px"}
-              width={"30px"}
+              height={"60px"}
+              width={"60px"}
               onClick={() => handleOpenHackerRank()}
             />
+              </a>  
+
+             <a>
             <img
               class="px-1  cursor-pointer"
               src={linkdinIcon}
-              height={"30px"}
-              width={"30px"}
+              height={"60px"}
+              width={"60px"}
               onClick={() => handleOpenlinkdIn()}
             />
+              
+              
+            </a> 
           </div>
         </div>
       </div>
-      <div class="order-first md:order-last">
+      <div class="max-w-2xl flex items-center justify-center ">
         <img
           src={passportPhoto}
           // width={'280px'}
           // height={'320px'}
           // class="shadow-[20px_20px_0] shadow-gray-200"
-          class={`shadow-[-10px_10px_0_#e5e7eb] ${
+          class={`h-auto shadow-[-10px_10px_0_#e5e7eb] ${
             theme === "dark"
               ? "md:shadow-[20px_20px_0_#374151] "
               : "md:shadow-[20px_20px_0_#e5e7eb]"
-          } dark:shadow-[-10px_10px_0_#374151 `}
+          } dark:shadow-[-10px_10px_0_#374151`}
         />
+
+
+
       </div>
     </div>
   );
