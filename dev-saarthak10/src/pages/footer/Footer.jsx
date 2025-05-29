@@ -1,5 +1,5 @@
 import React from 'react'
-import footerIcon from '../../assets/footer_icon.svg'
+import footerIcon from '../../assets/images/footer_icon.svg'
 const Footer = () => {
   return (
     <div class="mx-auto max-w-7xl">

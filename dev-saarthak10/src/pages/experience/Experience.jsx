@@ -1,16 +1,16 @@
 import React from "react";
-import organisationLogo from '../../assets/infostride_icon.svg'
-import organisationDarkLogo from '../../assets/infostride_dark_icon.svg'
+import organisationLogo from '../../assets/images/infostride_icon.svg'
+import organisationDarkLogo from '../../assets/images/infostride_dark_icon.svg'
 
 
 const Experience = ({ref, theme}) => {
   return (
-    <div class="mx-auto max-w-7xl py-16 md:py-24 " ref={ref} id="work">
+    <div class="mx-auto max-w-7xl py-16 px-4 md:py-24 " ref={ref} id="work">
       <div class="flex flex-col justify-center items-center">
         <div class=" bg-gray-200 rounded-lg">
           <p class="px-5 py-1">Experience</p>
         </div>
-        <p class="pt-4 dark:text-white">
+        <p class="pt-4 dark:text-white text-center">
           Here is a quick summary of my most recent experience:
         </p>
       </div>

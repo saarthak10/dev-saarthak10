@@ -1,5 +1,5 @@
 import React from 'react'
-import passportPhoto from "../../assets/passportSize.jpg";
+import passportPhoto from "../../assets/images/passportSize.jpg";
 
 
 const About = ({theme, ref}) => {

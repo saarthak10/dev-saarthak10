@@ -1,10 +1,10 @@
 import React from "react";
-import passportPhoto from "../../assets/passportSize.jpg";
-import locationIcon from "../../assets/location_icon.svg";
-import githubIcon from "../../assets/github_icon.svg";
-import githubDarkIcon from "../../assets/github_dark_icon.svg";
-import hackerrankIcon from "../../assets/hackerrank_icon.svg";
-import linkdinIcon from "../../assets/linkdin_icon.svg";
+import passportPhoto from "../../assets/images/passportSize.jpg";
+import locationIcon from "../../assets/images/location_icon.svg";
+import githubIcon from "../../assets/images/github_icon.svg";
+import githubDarkIcon from "../../assets/images/github_dark_icon.svg";
+import hackerrankIcon from "../../assets/images/hackerrank_icon.svg";
+import linkdinIcon from "../../assets/images/linkdin_icon.svg";
 
 const Intro = ({ theme }) => {
   const handleOpenGithub = () => {
@@ -19,7 +19,7 @@ const Intro = ({ theme }) => {
       "https://www.linkedin.com/in/saarthak-sharma-1210con";
   };
   return (
-    <div class="py-24 px-20 mx-auto max-w-7xl  flex flex-col  md:flex-row gap-12 justify-between">
+    <div class="mx-auto max-w-7xl py-16 px-8 flex flex-col  md:flex-row gap-12 justify-between">
       <div class="max-w-2xl flex-col order-last md:order-first ">
         <h1 class=" text-4xl  md:text-6xl dark:text-white">Hi, I’m Saarthak 👋</h1>
         <p class="text-justify text-base pt-2 dark:text-white">
@@ -42,34 +42,31 @@ const Intro = ({ theme }) => {
         </div>
         <div class="pt-12">
           <div class="flex">
-            <a>
+            <a href="https://github.com/saarthak10">
               <img
               class="px-1  cursor-pointer"
               src={theme === "dark" ? githubDarkIcon : githubIcon}
-              onClick={() => handleOpenGithub()}
-              height={"60px"}
-              width={"60px"}
+              height={"50px"}
+              width={"50px"}
             />
               </a>
 
-            <a>
+            <a href="https://www.hackerrank.com/profile/saarthaksharma87">
               
             <img
               class="px-1  cursor-pointer"
               src={hackerrankIcon}
-              height={"60px"}
-              width={"60px"}
-              onClick={() => handleOpenHackerRank()}
+              height={"50px"}
+              width={"50px"}
             />
               </a>  
 
-             <a>
+             <a href="https://www.linkedin.com/in/saarthak-sharma-1210con">
             <img
               class="px-1  cursor-pointer"
               src={linkdinIcon}
-              height={"60px"}
-              width={"60px"}
-              onClick={() => handleOpenlinkdIn()}
+             height={"50px"}
+              width={"50px"}
             />
               
               

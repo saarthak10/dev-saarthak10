@@ -1,17 +1,17 @@
 import React from 'react'
-import javascriptIcon from '../../assets/javascript_icon.svg'
-import reactIcon from '../../assets/react_icon.svg'
-import javaIcon from '../../assets/java_icon.svg'
-import kotlinIcon from '../../assets/kotlin_icon.svg'
-import androidIcon from '../../assets/android_icon.svg'
-import materialIcon from '../../assets/materialui_icon.svg'
-import gitIcon from '../../assets/git_skill_icon.svg'
-import tailwindIcon from '../../assets/tailwindcss_icon.svg'
-import firebaseIcon from '../../assets/firebase_icon.svg'
-import socketIcon from '../../assets/socket_icon.svg'
-import socketDarkIcon from '../../assets/socket_dark_icon.svg'
-import mysqlIcon from '../../assets/mysql_icon.svg'
-import mongodbIcon from '../../assets/mongodb_icon.svg'
+import javascriptIcon from '../../assets/images/javascript_icon.svg'
+import reactIcon from '../../assets/images/react_icon.svg'
+import javaIcon from '../../assets/images/java_icon.svg'
+import kotlinIcon from '../../assets/images/kotlin_icon.svg'
+import androidIcon from '../../assets/images/android_icon.svg'
+import materialIcon from '../../assets/images/materialui_icon.svg'
+import gitIcon from '../../assets/images/git_skill_icon.svg'
+import tailwindIcon from '../../assets/images/tailwindcss_icon.svg'
+import firebaseIcon from '../../assets/images/firebase_icon.svg'
+import socketIcon from '../../assets/images/socket_icon.svg'
+import socketDarkIcon from '../../assets/images/socket_dark_icon.svg'
+import mysqlIcon from '../../assets/images/mysql_icon.svg'
+import mongodbIcon from '../../assets/images/mongodb_icon.svg'
 
 
 
@@ -32,12 +32,12 @@ const Skills = ({ref, theme}) => {
     {id:13, skill:'MongoDB', logo:`${mongodbIcon}`},
   ]
   return (
-    <div class="mx-auto max-w-7xl py-16 md:py-24 " ref={ref}>
+    <div class="mx-auto max-w-7xl py-16 px-4 md:py-24 md:px-0 " ref={ref}>
       <div class="flex flex-col justify-center items-center">
         <div class=" bg-gray-200 rounded-lg">
         <p class="px-5 py-1">Skills</p>
         </div>
-        <p class="pt-4 dark:text-white" >The skills, tools and technologies I am really good at:</p>
+        <p class="pt-4 dark:text-white text-center" >The skills, tools and technologies I am really good at:</p>
       </div>
 
       <div class="grid  grid-cols-3 grid-rows-3 md:grid-cols-5  md:grid-rows-2  gap-4 items-center pt-12 ">

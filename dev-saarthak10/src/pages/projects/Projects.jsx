@@ -1,10 +1,10 @@
 import React from "react";
-import digidocImage from "../../assets/digidoc_project.svg";
-import prescriberyImage from "../../assets/prescribery_logo.png";
-import prescriberyDarkImage from "../../assets/prescribery_dark_logo.png";
-import nexBuyImage from "../../assets/nexbuy_logo.png"
-import buildDarkImage from "../../assets/buildezi_dark_logo.png";
-import buildImage from "../../assets/buildezi_logo.png";
+import digidocImage from "../../assets/images/digidoc_project.svg";
+import prescriberyImage from "../../assets/images/prescribery_logo.png";
+import prescriberyDarkImage from "../../assets/images/prescribery_dark_logo.png";
+import nexBuyImage from "../../assets/images/nexbuy_logo.png"
+import buildDarkImage from "../../assets/images/buildezi_dark_logo.png";
+import buildImage from "../../assets/images/buildezi_logo.png";
 
 
 const Projects = ({ ref, theme }) => {
@@ -85,7 +85,7 @@ the hassle to visit clinics for continuous health checkups.`,
               </p>
               <div class="grid  grid-cols-3 grid-rows-2  rounded-xl mt-6">
                 {project.skills.map((skill) => (
-                  <div class="text-center bg-gray-200 dark:bg-gray-dark-200 dark:text-gray-dark-600 rounded-xl mr-1 mt-2 ">
+                  <div class="text-center flex justify-center items-center bg-gray-200 dark:bg-gray-dark-200 dark:text-gray-dark-600 rounded-xl mr-1 mt-2 ">
                     <p class="px-5 py-1 text-[14px]">{skill}</p>
                   </div>
                 ))}
