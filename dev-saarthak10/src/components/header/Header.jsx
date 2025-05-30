@@ -82,6 +82,8 @@ const Header = ({ pages, handleThemeToggle, theme }) => {
                 key={page.id}
                 class="pl-4 pt-4 dark:text-gray-dark-600"
                 href={`#${page.name}`}
+                onClick={() => setIsOpen(!isOpen)}
+
               >
                 {page.title}
               </a>
