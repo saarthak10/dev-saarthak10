@@ -22,7 +22,7 @@ const Experience = ({ref, theme}) => {
             <div class='flex flex-col order-3 md:order-2 pt-4 md:pt-0'>
               <p class="text-xl dark:text-white">Software Development Engineer</p>
               <ul class='list-disc pt-4 ml-4'>
-                <li class="text-base text-gray-600 dark:text-gray-dark-600">Worked with SHCIL (Stock Holding Corporation of India) and Doctalkgo, delivering robust and user-centric digital solutions.</li>
+                <li class="text-base text-gray-600 dark:text-gray-dark-600">Worked on Digidoc for SHCIL (Stock Holding Corporation of India) and BeyondMD Prescribery for Doctalkgo, delivering robust and user-centric digital solutions.</li>
                 <li class="text-base text-gray-600 dark:text-gray-dark-600">Built scalable web and mobile apps using React,React Native, Kotlin tailored for performance and user experience.</li>
                 <li class="text-base text-gray-600 dark:text-gray-dark-600">Applied Clean Architecture and SOLID principles to ensure code quality, maintainability, and long-term scalability across projects.</li>
                 
